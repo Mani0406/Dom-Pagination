@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    padding: 10px;
+    background: rgb(48, 236, 142);
+}
+
+.pagination ul{
+display: flex;
+background: white;
+padding: 8px;
+border-radius: 50px;
+}
+.pagination ul li{
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.pagination ul li.nums{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+}
+.pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+}
+.pagination ul li.bth {
+    
+    padding: 0 20px;
+}
+.pagination ul li.prev{
+    border-radius: 25px 5px 5px 25px;
+}
+.pagination ul li.Next{
+    border-radius: 5px 25px 25px 5px;
+}
+.pagination ul li.active,
+.pagination ul li.nums:hover,
+.pagination ul li.bth:hover{
+    color: white;
+    background: cornflowerblue ;
+}
